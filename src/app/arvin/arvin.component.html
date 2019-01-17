@@ -1,0 +1,243 @@
+<section id="footer" class="footer">
+  <div class="footer-content">
+    <div class="title-contacts-social-box">
+      <div class="footer-title-box">
+        <h1 class="title">You're next.</h1>
+        <span class="subtitle">Let's go.</span>
+      </div>
+      <div class="contacts-social-lists">
+        <ul class="contacts-list">
+          <li>
+            <a href="mailto:hello@theklaud.com">
+              <img src="../../assets/icons/mail.png" alt="">
+              <span>hello@theklaud.com</span>
+            </a>
+          </li>
+          <li>
+            <img src="../../assets/icons/phone.png" alt="">
+            <span>+22 355 962 221</span>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyrights-wrapper">
+      <span>&copy; 2018 Klaud. All rights reserved.</span>
+    </div>
+  </div>
+  <div class="contact-us-wrapper">
+    <div>
+      <span [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : null">First of all, what do you need?</span>
+      <textarea type="text" placeholder="Describe your project briefly"
+                [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="message"
+                [disabled]="isMessageWritten" (keyup)="replaceSpaces('message')"></textarea>
+      <div class="next-wrapper" *ngIf="message && !isMessageWritten" (click)="nextField('message')">
+        <span>Next</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </div>
+    </div>
+    <div id="footer-name-box" class="name-box">
+      <span [ngStyle]="isNameWritten ? {'opacity': '0.4'} : null">Oh, we didn't get your name!</span>
+      <input type="text" placeholder="Please introduce yourself"
+             [ngStyle]="isNameWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="name"
+             [disabled]="isNameWritten" (keyup)="replaceSpaces('name')">
+      <div class="next-wrapper" *ngIf="name && !isNameWritten" (click)="nextField('name')">
+        <span>Next</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </div>
+    </div>
+    <div id="footer-email-box" class="email-box">
+      <span>Last but not least, your email</span>
+      <input type="text" placeholder="Enter your email address" [(ngModel)]="email" (keyup)="replaceSpaces('email')">
+      <div class="next-wrapper" *ngIf="email && email.match('^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$')">
+        <span>Send</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<header id="header">
+  <div id="logo-nav-box" class="logo-nav-box">
+    <a (click)="routeTo('home')">
+      <img id="logo-image" src="../../assets/images/logo@2x.png" class="logo" alt="">
+    </a>
+    <div id="menu-btn-wrapper" class="menu-btn-wrapper">
+      <img id="menu-btn" src="../../assets/images/menu-hover.png" class="menu-btn" alt="" (click)="openMenu()">
+    </div>
+    <div id="menu" class="menu-wrapper">
+      <img src="../../assets/images/menu.png" class="menu-btn" alt="" (click)="openMenu()">
+      <div class="case-studies-content">
+        <span class="menu-title">Case studies</span>
+        <ul>
+          <li>
+            <a (click)="routeTo('beteaze')">BetEaze</a>
+          </li>
+          <li>
+            <a (click)="routeTo('arvin')">Arvin</a>
+          </li>
+          <li>
+            <a (click)="routeTo('koffee')">Koffee Run</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-content">
+        <span class="menu-title">Contact</span>
+        <ul>
+          <li>
+            <a href="mailto:hello@theklaud.com">
+              <img src="../../assets/icons/mail.png" alt="">
+              <span>hello@theklaud.com</span>
+            </a>
+          </li>
+          <li>
+            <img src="../../assets/icons/phone.png" alt="">
+            <span>+22 355 962 221</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="social-list">
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-content">
+    <div class="main-title-box">
+      <h1 id="header-title" class="title">Got Milk?</h1>
+      <h2 id="header-subtitle" class="subtitle">Arvin.</h2>
+      <p id="header-info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </div>
+  <div class="header-images">
+    <img src="../../assets/images/arvin/milk%201@2x.png" alt="">
+    <div class="bottle-image-wrapper">
+      <img src="../../assets/images/arvin/main%20object@2x.png" alt="">
+      <img src="../../assets/images/arvin/milk%202%20@2x.png" alt="" [ngStyle]="{clip: 'rect(' + clipValue + 'vw' + ', 26.02vw, 44vw, 0)'}">
+    </div>
+    <img src="../../assets/images/arvin/milk%202@2x.png" alt="">
+  </div>
+  <div class="scroll-box" (click)="scrollTo()">
+    <span>Go for it!</span>
+    <img src="../../assets/icons/arvin%20arrow@2x.png" alt="">
+  </div>
+</header>
+
+<section class="overview-section">
+  <div id="overview-item-1">
+    <div class="dividers-wrapper">
+      <div></div>
+      <div class="divider" *ngFor="let divider of dividers"></div>
+    </div>
+    <div class="main-title-box">
+      <h1 class="title">Get started.</h1>
+      <h2 class="subtitle">We want milk!</h2>
+    </div>
+    <img id="phone-image" src="../../assets/images/arvin/1@2x.png" alt=""
+         [ngClass]="isFixedPhoneImage ? 'fixed-phone-image' : 'phone-image'">
+  </div>
+  <div id="overview-item-2">
+    <div class="dividers-wrapper">
+      <div></div>
+      <div class="divider" *ngFor="let divider of dividers"></div>
+    </div>
+    <div class="main-title-box">
+      <h1 class="title">Meet Arvin.</h1>
+      <h2 class="subtitle">Want anything?</h2>
+    </div>
+  </div>
+  <div id="overview-item-3">
+    <div class="dividers-wrapper">
+      <div></div>
+      <div class="divider" *ngFor="let divider of dividers"></div>
+    </div>
+    <div class="main-title-box">
+      <h1 class="title">What's nearby?</h1>
+      <h2 class="subtitle">You choose!</h2>
+    </div>
+  </div>
+  <div id="overview-item-4">
+    <div class="dividers-wrapper">
+      <div></div>
+    </div>
+    <div class="main-title-box">
+      <h1 class="title">Never run out.</h1>
+      <h2 class="subtitle">Thanks Arvin.</h2>
+    </div>
+  </div>
+</section>
+
+<section class="groups-history-stats-section">
+  <div class="main-title-box">
+    <h1 class="title">Groups, history, stats.</h1>
+    <h2 class="subtitle">You name it.</h2>
+  </div>
+  <div class="arvin-screens-wrapper">
+    <img src="../../assets/images/arvin/arv1@2x.png" alt="">
+    <img src="../../assets/images/arvin/arv2@2x.png" alt="">
+    <div>
+      <img src="../../assets/images/arvin/arv3@2x.png" alt="">
+      <img src="../../assets/images/arvin/arv4@2x.png" alt="">
+    </div>
+    <img src="../../assets/images/arvin/arv5@2x.png" alt="">
+  </div>
+</section>
+
+<section id="case-studies-section" class="case-studies-section">
+  <div id="beteaze-wrapper" class="beteaze-wrapper">
+    <img id="beteaze-image" src="../../assets/images/phone%20beteaze.png" alt="">
+    <img id="bg-beteaze" src="../../assets/images/bg%20rays%20beteaze.png" alt="">
+    <div>
+      <span>BetEaze</span>
+      <a id="next-wrapper-beteaze" class="next-wrapper" (click)="routeTo('beteaze')">
+        <span>More!</span>
+        <img src="../../assets/icons/arrow%20blue%20hovered@2x.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div id="koffee-wrapper" class="koffee-wrapper">
+    <div>
+      <span>Koffee Run</span>
+      <a id="next-wrapper-koffee" class="next-wrapper koffee" (click)="routeTo('koffee')">
+        <span>More!</span>
+        <img src="../../assets/icons/arrow%20orange@2x.png" alt="">
+      </a>
+    </div>
+    <div>
+      <img id="koffee-image" src="../../assets/images/phone%20koffee.png" alt="">
+      <img id="bg-koffee" src="../../assets/images/oval%20koffee.png" alt="">
+    </div>
+  </div>
+</section>
+
+<div style="margin-bottom: 100vh"></div>

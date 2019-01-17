@@ -1,0 +1,309 @@
+<section id="footer" class="footer">
+  <div class="footer-content">
+    <div class="title-contacts-social-box">
+      <div class="footer-title-box">
+        <h1 class="title">You're next.</h1>
+        <span class="subtitle">Let's go.</span>
+      </div>
+      <div class="contacts-social-lists">
+        <ul class="contacts-list">
+          <li>
+            <a href="mailto:hello@theklaud.com">
+              <img src="../../assets/icons/mail.png" alt="">
+              <span>hello@theklaud.com</span>
+            </a>
+          </li>
+          <li>
+            <img src="../../assets/icons/phone.png" alt="">
+            <span>+22 355 962 221</span>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyrights-wrapper">
+      <span>&copy; 2018 Klaud. All rights reserved.</span>
+    </div>
+  </div>
+  <div class="contact-us-wrapper">
+    <div>
+      <span [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : null">First of all, what do you need?</span>
+      <textarea type="text" placeholder="Describe your project briefly"
+                [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="message"
+                [disabled]="isMessageWritten" (keyup)="replaceSpaces('message')"></textarea>
+      <div class="next-wrapper" *ngIf="message && !isMessageWritten" (click)="nextField('message')">
+        <span>Next</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </div>
+    </div>
+    <div id="footer-name-box" class="name-box">
+      <span [ngStyle]="isNameWritten ? {'opacity': '0.4'} : null">Oh, we didn't get your name!</span>
+      <input type="text" placeholder="Please introduce yourself"
+             [ngStyle]="isNameWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="name"
+             [disabled]="isNameWritten" (keyup)="replaceSpaces('name')">
+      <div class="next-wrapper" *ngIf="name && !isNameWritten" (click)="nextField('name')">
+        <span>Next</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </div>
+    </div>
+    <div id="footer-email-box" class="email-box">
+      <span>Last but not least, your email</span>
+      <input type="text" placeholder="Enter your email address" [(ngModel)]="email" (keyup)="replaceSpaces('email')">
+      <div class="next-wrapper" *ngIf="email && email.match('^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$')">
+        <span>Send</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<header id="header">
+  <div id="logo-nav-box" class="logo-nav-box">
+    <a (click)="routeTo('home')">
+      <img id="logo-image" src="../../assets/images/logo@2x.png" class="logo" alt="">
+    </a>
+    <div id="menu-btn-wrapper" class="menu-btn-wrapper">
+      <img id="menu-btn" src="../../assets/images/menu-hover.png" class="menu-btn" alt="" (click)="openMenu()">
+    </div>
+    <div id="menu" class="menu-wrapper">
+      <img src="../../assets/images/menu.png" class="menu-btn" alt="" (click)="openMenu()">
+      <div class="case-studies-content">
+        <span class="menu-title">Case studies</span>
+        <ul>
+          <li>
+            <a (click)="routeTo('beteaze')">BetEaze</a>
+          </li>
+          <li>
+            <a (click)="routeTo('arvin')">Arvin</a>
+          </li>
+          <li>
+            <a (click)="routeTo('koffee')">Koffee Run</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-content">
+        <span class="menu-title">Contact</span>
+        <ul>
+          <li>
+            <a href="mailto:hello@theklaud.com">
+              <img src="../../assets/icons/mail.png" alt="">
+              <span>hello@theklaud.com</span>
+            </a>
+          </li>
+          <li>
+            <img src="../../assets/icons/phone.png" alt="">
+            <span>+22 355 962 221</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="social-list">
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-content">
+    <div class="main-title-box">
+      <h1 id="header-title" class="title">Odds. Info.</h1>
+      <h2 id="header-subtitle" class="subtitle">BetEaze.</h2>
+      <p id="header-info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+    <lottie-animation-view
+      [options]="headerLottieConfig"
+      (animCreated)="handleAnimation($event, 'header')">
+    </lottie-animation-view>
+  </div>
+  <div class="scroll-box" (click)="scrollTo()">
+    <span>Go for it!</span>
+    <img src="../../assets/images/arrow@2x.png" alt="">
+  </div>
+</header>
+
+<main>
+  <section class="branding-section">
+    <div id="branding-title-box" class="main-title-box">
+      <h1 class="title">Branding. UI. Coding.</h1>
+      <h2 class="subtitle">We did it all.</h2>
+    </div>
+    <div id="branding-content" class="branding-content">
+      <div>
+        <div>
+          <img id="branding-image-7" src="../../assets/images/beteaze/img999@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-8" src="../../assets/images/beteaze/img00@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-10" src="../../assets/images/beteaze/img99@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-11" src="../../assets/images/beteaze/img88@2x.png" alt="">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img id="branding-image-4" src="../../assets/images/beteaze/img77@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-6" src="../../assets/images/beteaze/img66@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-9" src="../../assets/images/beteaze/img55@2x.png" alt="">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img id="branding-image-1" src="../../assets/images/beteaze/img22@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-3" src="../../assets/images/beteaze/img33@2x.png" alt="">
+        </div>
+        <div>
+          <img id="branding-image-5" src="../../assets/images/beteaze/img44@2x.png" alt="">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img id="branding-image-2" src="../../assets/images/beteaze/img11@2x.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="odds-section" class="odds-section">
+    <lottie-animation-view
+      [options]="oddsLottieConfig"
+      (animCreated)="handleAnimation($event, 'odds')">
+    </lottie-animation-view>
+    <div class="main-title-box">
+      <h1 id="odds-section-title" class="title">Odds & stats.</h1>
+      <h2 id="odds-section-subtitle" class="subtitle">Endless.</h2>
+      <p id="odds-section-info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+  </section>
+
+  <section id="onboarding-section" class="onboarding-section">
+    <div class="main-title-box">
+      <h1 class="title">Onboarding</h1>
+      <h2 class="subtitle">Welcome.</h2>
+    </div>
+    <div id="beteaze-screens-wrapper" class="beteaze-screens-wrapper">
+      <img src="../../assets/images/beteaze/first%20screen@2x.png" alt="">
+      <img src="../../assets/images/beteaze/login@2x.png" alt="">
+      <img src="../../assets/images/beteaze/onboarding%201%20-%20intro%20C@2x.png" alt="">
+      <img src="../../assets/images/beteaze/onboarding%201%20-%20intro@2x.png" alt="">
+      <img src="../../assets/images/beteaze/onboarding%202%20-%20details%20location%20modal@2x.png" alt="">
+      <img src="../../assets/images/beteaze/onboarding%203%20-%20fav%20leagues@2x.png" alt="">
+    </div>
+    <div id="rectangles-wrapper" class="rectangles-wrapper">
+      <div class="rectangles-row" *ngFor="let rectanglesRow of rectanglesRows">
+        <div class="rectangle" *ngFor="let rectangle of rectanglesRow.rectangles" [style.backgroundColor]="rectangle.color"
+             [style.width]="rectangle.width + 'vw'" [style.marginRight]="rectangle.marginRight + '%'"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section id="pick-team-section" class="pick-team-section">
+  <div class="title-group-box">
+    <div class="main-title-box">
+      <h1 id="pick-team-title" class="title">Pick your team.</h1>
+      <h2 id="pick-team-subtitle" class="subtitle">Watch them win.</h2>
+      <p id="pick-team-info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+    <img id="group-cards-image" src="../../assets/images/beteaze/tables@2x.png" alt="">
+  </div>
+  <div class="bracket-wrapper">
+    <img id="bracket-image" src="../../assets/images/beteaze/tables2@2x.png" alt="">
+  </div>
+</section>
+
+<section id="visit-beteaze-section" class="visit-beteaze-section">
+  <div id="visit-beteaze-title-box" class="main-title-box">
+    <h1 class="title">Hey, look!</h1>
+    <h2 class="subtitle">It's all mobile.</h2>
+  </div>
+  <img id="beteaze-screen" src="../../assets/images/beteaze/mobile%20screen%205@2x.png" alt="">
+  <div id="bw-beteaze-screens-wrapper" class="bw-beteaze-screens-wrapper">
+    <div>
+      <img src="../../assets/images/beteaze/mobile%20screen%201@2x.png" alt="">
+      <img src="../../assets/images/beteaze/mobile%20screen%202@2x.png" alt="">
+    </div>
+    <div>
+      <img src="../../assets/images/beteaze/mobile%20screen%203@2x.png" alt="">
+      <img src="../../assets/images/beteaze/mobile%20screen%204@2x.png" alt="">
+    </div>
+  </div>
+  <div class="beteaze-footer">
+    <div class="main-title-box">
+      <h1 class="title">It's ready.</h1>
+      <h2 class="subtitle">Go get it tiger.</h2>
+      <a class="visit-beteaze-link">
+        <span>Visit BetEaze</span>
+        <img src="../../assets/icons/arrow%20right@2x.png" alt="">
+      </a>
+    </div>
+    <img src="../../assets/images/beteaze/iphone@2x.png" alt="">
+  </div>
+</section>
+
+<section id="case-studies-section" class="case-studies-section">
+  <div id="arvin-wrapper" class="arvin-wrapper">
+    <div>
+      <span>Arvin</span>
+      <a id="next-wrapper-arvin" class="next-wrapper arvin" (click)="routeTo('arvin')">
+        <span>More!</span>
+        <img src="../../assets/icons/arrow%20red@2x.png" alt="">
+      </a>
+    </div>
+    <img id="arvin-image" src="../../assets/images/arvin%20phone.png" alt="">
+    <img id="milk-arvin" src="../../assets/images/milk.png" alt="">
+  </div>
+  <div id="koffee-wrapper" class="koffee-wrapper">
+    <div>
+      <img id="koffee-image" src="../../assets/images/phone%20koffee.png" alt="">
+      <img id="bg-koffee" src="../../assets/images/oval%20koffee.png" alt="">
+    </div>
+    <div>
+      <span>Koffee Run</span>
+      <a id="next-wrapper-koffee" class="next-wrapper koffee" (click)="routeTo('koffee')">
+        <span>More!</span>
+        <img src="../../assets/icons/arrow%20orange@2x.png" alt="">
+      </a>
+    </div>
+  </div>
+</section>
+
+<div style="margin-bottom: 100vh"></div>

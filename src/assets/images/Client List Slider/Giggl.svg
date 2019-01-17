@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="573px" height="645px" viewBox="0 0 573 645" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>748C42C1-956D-49BA-ADBB-3DF60731A7F6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-32.5%" y="-27.2%" width="165.0%" height="154.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="40" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="0%" cy="9.4564819%" fx="0%" fy="9.4564819%" r="169.900066%" gradientTransform="translate(0.000000,0.094565),scale(1.000000,0.834061),rotate(48.452490),translate(-0.000000,-0.094565)" id="radialGradient-2">
+            <stop stop-color="#FD2B5A" offset="0%"></stop>
+            <stop stop-color="#FF4C74" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="New-Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-List-Slider" transform="translate(-1549.000000, -392.000000)">
+            <g id="Giggl" transform="translate(1638.000000, 481.000000)">
+                <rect id="Rectangle" fill="#383838" fill-rule="nonzero" filter="url(#filter-1)" x="13" y="13" width="369" height="441"></rect>
+                <rect id="Rectangle" fill="url(#radialGradient-2)" fill-rule="nonzero" x="0" y="0" width="382" height="458"></rect>
+                <text id="giggl." font-family="AirbnbCerealApp-ExtraBold, Airbnb Cereal App" font-size="125" font-weight="600">
+                    <tspan x="21" y="262" fill="#141414">giggl</tspan>
+                    <tspan x="326.125" y="262" fill="#2DD3EA">.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

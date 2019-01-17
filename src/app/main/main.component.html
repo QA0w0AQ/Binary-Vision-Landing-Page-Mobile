@@ -1,0 +1,604 @@
+<section id="out-of-thought-section" class="out-of-thought-section">
+    <div class="out-of-thought-section-title-box">
+        <h1 class="title">Building relationships</h1>
+        <span class="subtitle">that matter.</span>
+    </div>
+    <img src="assets/images/out-of-thought.svg" alt="">
+</section>
+
+<section id="footer" class="footer">
+    <div class="footer-content">
+      <div class="footer-title-box">
+        <h1 class="footertitle">You're next.</h1>
+        <span class="footersubtitle">So what are you waiting for?</span>
+        <h2 class="footertitle">Let's do this.</h2>
+      </div>
+      <div class="contact-us-wrapper">
+        <div *ngIf="!isMessageWritten">
+          <span [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : null">First of all, how can we help?</span>
+          <textarea type="text" placeholder="Describe your project briefly"
+                    [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="message"
+                    [disabled]="isMessageWritten" (keyup)="replaceSpaces('message')"></textarea>
+          <div class="next-wrapper" *ngIf="message && !isMessageWritten"
+               (click)="nextField('message')">
+            <span>Next</span>
+            <img src="assets/icons/arrow%20right@2x.png" alt="">
+          </div>
+        </div>
+        <div class="name-box" *ngIf="isMessageWritten && !isNameWritten">
+          <span [ngStyle]="isNameWritten ? {'opacity': '0.4'} : null">Oh shoot! We didn’t get your name.</span>
+          <input type="text" placeholder="Please introduce yourself"
+                 [ngStyle]="isNameWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="name"
+                 [disabled]="isNameWritten" (keyup)="replaceSpaces('name')">
+          <div class="next-wrapper" *ngIf="name && name.length >= 3 && !isNameWritten" (click)="nextField('name')">
+            <span>Next</span>
+            <img src="assets/icons/arrow%20right@2x.png" alt="">
+          </div>
+        </div>
+        <div class="email-box" *ngIf="isNameWritten">
+          <span>It’s nice to meet you. Now, how should we reach you?</span>
+          <input type="text" placeholder="Enter your email address" [(ngModel)]="email" (keyup)="replaceSpaces('email')">
+          <div class="loader-submit-wrapper">
+            <div id="loader"></div>
+            <div class="next-wrapper"
+                 *ngIf="email && email.match('^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$') && !isLoading"
+                 (click)="sendForm()">
+              <span>Submit</span>
+              <img src="ssets/icons/arrow%20right@2x.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-social-lists">
+        <ul class="contacts-list">
+          <li>
+            <a href="mailto:hello@binary.vision">
+              <i class="fas fa-at"></i>
+              <span>hello@binary.vision</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+604-359-7187">
+              <i class="fas fa-phone"></i>
+              <span>+604-359-7187</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyrights-wrapper">
+      <span>&copy; 2018 Binary Vision. All rights reserved.</span>
+    </div>
+  </section>
+
+<header id="header">
+    <div id="logo-nav-box" class="logo-nav-box">
+        <a (click)="routeTo('home')">
+            <img id="logo-image" src="assets/images/Group 4 Copy.png" class="logo" alt="">
+        </a>
+        <!-- <app-menu></app-menu> -->
+        <div id="menu-btn-wrapper" class="menu-btn-wrapper">
+            <img id="menu-btn" src="assets/images/menu.png" class="menu-btn" alt="" (click)="openMenu()">
+        </div>
+        <div id="menu" class="menu-wrapper">
+            <i class="fas fa-times"(click)="openMenu()"></i>
+
+            <div class="case-studies-content">
+                <span class="menu-title">Case studies</span>
+                <ul>
+                    <li>
+                        <a (click)="routeTo('beteaze')">BetEaze</a>
+                    </li>
+                    <li>
+                        <a (click)="routeTo('arvin')">Arvin</a>
+                    </li>
+                    <li>
+                        <a (click)="routeTo('koffee')">lungo Social</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-content">
+                <span class="menu-title">Contact</span>
+                <ul>
+                    <li>
+                        <a href="mailto:hello@binary.vision">
+                            <i class="fas fa-at"></i>
+                            <span>hello@binary.vision</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+604-359-7187">
+                            <i class="fas fa-phone"></i>
+                            <span>+604-359-7187</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-list">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img src="assets/images/header-top.svg" alt="" id="main-header-top" class="main-header-top">
+    <img src="assets/images/header-left.svg" alt="" id="main-header-left" class="main-header-left">
+    <img src="assets/images/header-right.svg" alt="" id="main-header-right" class="main-header-right">
+
+    <div class="main-title-box">
+        <h1 id="header-title" class="title">Hello, we are</h1>
+        <span id="header-subtitle" class="subtitle">Binary Vision Studios</span>
+        <p id="header-subtitle-text">A creative design & digital agency specializing in UI/UX design</p>
+    </div>
+    <div class="scroll-box" (click)="scrollTo('header')">
+        <span>Scroll away!</span>
+        <img src="assets/images/arrow@2x.png" alt="">
+    </div>
+
+    <div class="header-text-wrapper">
+
+    </div>
+</header>
+
+<section id="case-studies-section" class="case-studies-section">
+    <div id="introduce-page" class="introduce-pagex">
+        <div class="background background-introduce" id="background-introduce">
+            <h3 id="binaryvision binaryvision-introduce" class="binaryvision binaryvision-introduce">
+                <div class="symble">
+                    &#8212;&#8212;
+                </div>
+                <div class="aboutBv">
+                    ABOUT<br> BINARY VISION 
+                </div>
+            </h3>
+            <p class="content content-introduce" id="wrapLine">
+                       <span>
+                            Creating beautiful experiences is the core of what we do with our clients.
+                       </span> 
+                       <span>
+                            We cultivate experiences from the fine details.
+                            Never accepting that something is simply good enough,
+                            and always working to making things better.<br>
+                       </span>
+
+                <br>   
+                <span>
+                        We are a passionate, rapidly growing global team of open-minded,
+                </span>
+<span>
+        sometimes a little wacky, award-winning specialists who love beautifully
+</span>
+<span>
+        crafted designs and observe every detail. We love what we do and we never
+        turn away from a good challenge.
+</span>
+
+            <br>
+            </p>
+            <p class="content content-introduce connectwithUs" id="content content-introduce connectwithUs">
+                Connect with Us &#8212;
+            </p>
+        </div>
+       
+    </div>
+    <div id="project-page" class="project-page">
+            <div class="background background-project" id="background-project">
+                <h3 id="binaryvisionbinaryvision-project" class="binaryvision binaryvision-project">
+                    <div class="symble">
+                        &#8212;&#8212;
+                    </div>
+                    <div class="ourProjects">
+                        OUR<br> PROJECTS 
+                    </div>
+                </h3>
+                <p class="content content-project" id="content content-project">
+                    Creating beautiful experiences is the core of what we do with our clients.
+                            We cultivate experiences from the fine details.
+                            Never accepting that something is simply good enough,
+                            and always working to making things better.<br>
+                    <br>   
+                </p>
+                <p class="content content-project learnMore">
+                    Learn More &#8212;
+                </p>
+            </div>
+           
+    </div>
+    <div class="team-section" *ngIf="true">
+                <div id="members-list" class="members-list">
+                    <div>
+                        <div id="member-1-info-wrapper" class="member-info-wrapper">
+                            <img id="member-1" src="assets/images/team/member_1.jpg" alt="">
+                            <a href="https://www.linkedin.com/in/kendragaragan/" target="_blank">
+                                <div id="member-1-info" class="member-info">
+                                    <div>
+                                        <span class="member-name">Kendra Garagan</span>
+                                        <span class="member-position">CEO</span>
+                                    </div>
+                                    <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                    <img src="assets/images/linkedin.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div id="member-2-info-wrapper" class="member-info-wrapper">
+                                <img id="member-2" src="assets/images/team/member_2.png" alt="">
+                                <a href="https://www.linkedin.com/in/warren-daniel-93b058172/" target="_blank">
+                                    <div id="member-2-info" class="member-info">
+                                        <div>
+                                            <span class="member-name">Warren Daniel</span>
+                                            <span class="member-position">Account Executive</span>
+                                        </div>
+                                        <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                        <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                        <img src="assets/images/linkedin.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="member-4-info-wrapper" class="member-info-wrapper">
+                                <img id="member-4" src="assets/images/team/member_1.jpg" alt="">
+                                <a href="https://www.linkedin.com/in/santiago-godoy-a56a2911b/" target="_blank">
+                                    <div id="member-4-info" class="member-info">
+                                        <div>
+                                            <span class="member-name">Santiago Godoy</span>
+                                            <span class="member-position">Marketing Manager</span>
+                                        </div>
+                                        <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                        <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                        <img src="assets/images/linkedin.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="member-3-info-wrapper" class="member-info-wrapper">
+                                <img id="member-3" src="assets/images/team/member_3.jpg" alt="">
+                                <a href="https://www.linkedin.com/in/ryan-middlemiss-037289124/" target="_blank">
+                                    <div id="member-3-info" class="member-info">
+                                        <div>
+                                            <span class="member-name">Ryan Middlemiss</span>
+                                            <span class="member-position">Account Manager</span>
+                                        </div>
+                                        <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                        <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                        <img src="assets/images/linkedin.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="member-5-info-wrapper" class="member-info-wrapper">
+                                <img id="member-5" src="assets/images/team/member_4.png" alt="">
+                                <a href="https://www.linkedin.com/in/heather-setka-320904a3/" target="_blank">
+                                    <div id="member-5-info" class="member-info">
+                                        <div>
+                                            <span class="member-name">Heather Setka</span>
+                                            <span class="member-position">Account Manager</span>
+                                        </div>
+                                        <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                        <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                        <img src="assets/images/linkedin.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="member-6-info-wrapper" class="member-info-wrapper">
+                            <img id="member-6" src="assets/images/team/member_6.png" alt="">
+                            <a href="https://www.linkedin.com/in/ken-lee-4b11b4129/" target="_blank">
+                                <div id="member-6-info" class="member-info">
+                                    <div>
+                                        <span class="member-name">Ken Lee</span>
+                                        <span class="member-position">Account Manager</span>
+                                    </div>
+                                    <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                        <img src="assets/images/linkedin.png" alt="">
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="member-7-info-wrapper" class="member-info-wrapper">
+                            <img id="member-7" src="assets/images/team/member_7.jpg" alt="">
+                            <a href="https://www.linkedin.com/in/dilawerh/" target="_blank">
+                                <div id="member-7-info" class="member-info">
+                                    <div>
+                                        <span class="member-name">Dilawer Hussain</span>
+                                        <span class="member-position">UX/UI Designer</span>
+                                    </div>
+                                    <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                    <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                    <img src="assets/images/linkedin.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="member-8-info-wrapper" class="member-info-wrapper">
+                            <img id="member-8" src="assets/images/team/member_1.jpg" alt="">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <div id="member-8-info" class="member-info">
+                                    <div>
+                                        <span class="member-name">Santiago</span>
+                                        <span class="member-position">Marketing Manager</span>
+                                    </div>
+                                    <img src="assets/icons/hover-picture.png" alt="" class="hover-img">
+                                    <!--<img src="assets/images/canada_leaf.png" alt="">-->
+                                    <img src="assets/images/linkedin.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div id="capabilities-page" class="capabilities-page">
+            <div class="background background-capabilities" id="background-capabilities">
+                <h3 id="binaryvision binaryvision-capabilities" class="binaryvision binaryvision-capabilities">
+                    <div class="symble">
+                        &#8212;&#8212;
+                    </div>
+                    <div class="aboutBv">
+                        OUR<br> CAPABILITIES
+                    </div>
+                </h3>
+                <p class="content content-capabilities" id="content content-capabilities">
+                        We focus on the development of app, websites, and other digital products with an emphasis and focus on creating cutting-edge user experiences by telling stories through exquisite design. We strive to create relatable and unforgettable experiences, services, and products in every project we do. We aren't afraid of putting in long hours to deliver unique work, and cultivate experiences from the fine details. We are innovative thinkers and jump into each project brain-first.
+                <br>
+                </p>
+                <p class="content content-capabilities learnMore">
+                    Learn More &#8212;
+                </p>
+            </div>
+           
+    </div>
+</section>
+
+
+<main>
+    <div style="height: 12vw;  background-color: #0E1529;"></div>
+
+
+
+    <section id="skills-section" class="skills-section">
+        <div class="skills-section-title-box">
+          <h1 id="skills-section-title" class="title">A little sneak peek</h1>
+          <span id="skills-section-subtitle" class="subtitle">of what we offer.</span>
+        </div>
+        <div class="skills-crossword">
+          <div>
+            <span class="skills-letter" style="color: #F5CC43;">D</span>
+            <span class="skills-letter">E</span>
+            <span class="skills-letter">V</span>
+            <span class="skills-letter">E</span>
+            <span class="skills-letter">L</span>
+            <span class="skills-letter" style="color: #FB3D3D;">O</span>
+            <span class="skills-letter">P</span>
+            <span class="skills-letter">M</span>
+            <span class="skills-letter">E</span>
+            <span class="skills-letter">N</span>
+            <span class="skills-letter">T</span>
+          </div>
+          <div>
+            <span class="skills-letter">B</span>
+            <span class="skills-letter">R</span>
+            <span class="skills-letter">A</span>
+            <span class="skills-letter">N</span>
+            <span class="skills-letter">D</span>
+            <span class="skills-letter">I</span>
+            <span class="skills-letter">N</span>
+            <span class="skills-letter">G</span>
+          </div>
+          <div>
+            <span class="skills-letter" style="color: #75E2FF;">P</span>
+            <span class="skills-letter">R</span>
+            <span class="skills-letter">O</span>
+            <span class="skills-letter">D</span>
+            <span class="skills-letter">U</span>
+            <span class="skills-letter">C</span>
+            <span class="skills-letter">T</span>
+          </div>
+          <div>
+            <span class="skills-letter">S</span>
+            <span class="skills-letter">O</span>
+            <span class="skills-letter">C</span>
+            <span class="skills-letter">I</span>
+            <span class="skills-letter">A</span>
+            <span class="skills-letter">L</span>
+          </div>
+          <div>
+            <span class="skills-letter">D</span>
+            <span class="skills-letter" style="color: #26A5FF;">E</span>
+            <span class="skills-letter">S</span>
+            <span class="skills-letter">I</span>
+            <span class="skills-letter">G</span>
+            <span class="skills-letter">N</span>
+          </div>
+          <div>
+            <span class="skills-letter" style="color: #F5CC43;">A</span>
+            <span class="skills-letter" style="color: #FB3D3D;">P</span>
+            <span class="skills-letter" style="color: #75E2FF;">P</span>
+            <span class="skills-letter">S</span>
+          </div>
+          <div>
+            <span class="skills-letter">W</span>
+            <span class="skills-letter">E</span>
+            <span class="skills-letter">B</span>
+          </div>
+          <div>
+            <span class="skills-letter">U</span>
+            <span class="skills-letter">X</span>
+          </div>
+          <div>
+            <span class="skills-letter">U</span>
+            <span class="skills-letter">I</span>
+          </div>
+        </div>
+    </section>
+
+    <div style="height: 311vw;  background-color: #F7F6F3;">
+            <div style="height: 1vw;  background-color: #F7F6F3;"></div>
+            <div id="client-page" class="client-page">
+                    <div class="background background-client" id="background-client">
+                        <h3 id="binaryvision binaryvision-client" class="binaryvision binaryvision-client">
+                            <div class="symble">
+                                &#8212;&#8212;
+                            </div>
+                            <div class="ourClients">
+                                OUR <br>CLIENTS 
+                            </div>
+                        </h3>
+                        <p class="content content-client" id="content content-client">
+                                We build relationships that matter. We believe the most incredible projects are born among flexibility and collaboration. We focus on working with you, rather than for you. Whether your project is a simple brand package or an fully custom coded integrative digital platform, we work with you to make every one of your dreams a reality. 
+                            <br>   
+                        </p>
+                        <p class="content content-client learnMore">
+                            Launch your project &#8212;
+                        </p>
+                    </div>
+                   
+            </div>
+            
+            <!-- clients-section -->
+            <div class="clients-section" *ngIf="true">
+                <!-- <div>
+                    <img src="assets/icons/arrowprev.png" alt="" style="width: 10%;
+                    margin-top: 45vw;
+                    position: absolute;cursor: pointer;z-index: 2;"  (click)="arrowprev()">
+                </div>
+                <div>
+                        <img  id="arrownext" src="assets/icons/arrownext.png" alt="" style="width: 10%;
+                        margin-top: 45vw;margin-left: 90vw;
+                        position: absolute;cursor: pointer;z-index: 2;" (click)="arrownext()">
+                    </div> -->
+                <div id="clients-list" class="clients-list">
+                    <div>
+                        <div id="client-1-info-wrapper" class="client-info-wrapper">
+                            <a href="tbd" target="_blank">
+                                <img id="client-1" src="assets/images/Client List Slider/Group@2x.png" alt="" >
+                            </a> 
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div id="client-2-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-2" src="assets/images/Client List Slider/Group.svg" alt="">
+                                </a>
+                            </div>
+                            <div id="client-4-info-wrapper" class="client-info-wrapper">
+                                <a href="http://quantumdance.ca/" target="_blank">
+                                    <img id="client-4" src="assets/images/Client List Slider/Quantum@2x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="client-3-info-wrapper" class="client-info-wrapper">
+                                <a href="http://rentyourride.ca" target="_blank">
+                                    <img id="client-3" src="assets/images/Client List Slider/Group.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-5-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-5" src="assets/images/Client List Slider/AllSay.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="client-6-info-wrapper" class="client-info-wrapper">
+                            <a href="http://arvin.ai" target="_blank">
+                                <img id="client-6" src="assets/images/Client List Slider/Group@3x.png" alt="">
+                            </a>
+                        </div>
+                        <div id="client-7-info-wrapper" class="client-info-wrapper">
+                            <a href="tbd" target="_blank">
+                                <img id="client-7" src="assets/images/Client List Slider/Group@1.5x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="client-8-info-wrapper" class="client-info-wrapper">
+                            <a href="http://gigglapp.com" target="_blank">
+                                <img id="client-8" src="assets/images/Client List Slider/Giggl@2x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div id="client-9-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-9" src="assets/images/Client List Slider/Looper@2x.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-11-info-wrapper" class="client-info-wrapper">
+                                <a href="http://quantumdance.ca/" target="_blank">
+                                    <img id="client-11" src="assets/images/Client List Slider/AC@2x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="client-10-info-wrapper" class="client-info-wrapper">
+                                <a href="http://rentyourride.ca" target="_blank">
+                                    <img id="client-10" src="assets/images/Client List Slider/Group 5@2x.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-12-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-12" src="assets/images/Client List Slider/Group 4@2x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="client-13-info-wrapper" class="client-info-wrapper">
+                            <a href="http://arvin.ai" target="_blank">
+                                <img id="client-13" src="assets/images/Client List Slider/Kenergy Labs@2x.png" alt="">
+                            </a>
+                        </div>
+                        <div id="client-14-info-wrapper" class="client-info-wrapper">
+                            <a href="tbd" target="_blank">
+                                <img id="client-14" src="assets/images/Client List Slider/berry_s_white@2x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</main>
+<!-- <div style="margin-bottom: 100vh"></div> -->
+
+
+
+<div style="margin-bottom: 100vh"></div>
+

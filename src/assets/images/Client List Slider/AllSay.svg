@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="425px" height="533px" viewBox="0 0 425 533" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>38E4FC7B-9D65-4DDA-A1AD-D7E9E2E463BF</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-66.2%" y="-46.4%" width="232.4%" height="192.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="43.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="New-Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-List-Slider" transform="translate(-941.000000, -545.000000)">
+            <g id="AllSay" filter="url(#filter-1)" transform="translate(1027.000000, 631.000000)">
+                <rect id="Rectangle" fill="#98E3F6" fill-rule="nonzero" x="0" y="0" width="253" height="361"></rect>
+                <path d="M125.590928,201.677146 C120.076152,201.677146 115.52604,199.826641 111.94148,196.123064 C108.356476,192.422054 106.564492,187.701643 106.564492,181.961076 C106.564492,176.500312 108.539552,171.778844 112.49278,167.798937 C116.443936,163.819181 121.131836,161.828548 126.556184,161.828548 C132.530056,161.828548 137.286924,164.004609 140.826196,168.354013 C144.36384,172.705833 146.134364,178.537453 146.134364,185.847514 L146.134364,249.994881 L197.699784,249.994881 L197.699784,182.099845 C197.699784,159.422967 191.28872,141.53596 178.466148,128.437314 C165.64402,115.339876 148.109868,108.790553 125.867096,108.790553 C105.920248,108.790553 88.985052,115.780041 75.060028,129.755544 C61.13456,143.733312 54.171752,160.765206 54.171752,180.850924 C54.171752,201.491718 61.065592,218.66223 74.852828,232.361403 C88.640656,246.060576 105.87496,252.910087 126.556184,252.910087 C130.04854,252.910087 133.908676,252.539382 138.137924,251.798878 L138.137924,198.066887 C134.277344,200.476092 130.093828,201.677146 125.590928,201.677146 L125.590928,201.677146 Z" id="logo" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
