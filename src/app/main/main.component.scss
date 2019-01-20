@@ -515,9 +515,9 @@ main {
     display: flex;
     overflow-x: scroll;
     // padding-left: 10%;
-    margin-top: -13%;
+    margin-top: -20%;
     margin-left: 12vw;
-    height: 48.1vw;
+    height: 67.1vw;
     transition-duration: 1s;
     overflow: -moz-scrollbars-none;
     &::-webkit-scrollbar {
@@ -526,50 +526,13 @@ main {
     .client-info-wrapper {
       position: relative;
     }
-    .client-info {
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      background-color: #F7F6F3;
-      padding: 1.6vw;
-      cursor: pointer;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      animation-duration: 0.4s;
-      > div {
-        display: inline-flex;
-        flex-direction: column;
-        .client-name {
-          font-size: 1.4vw;
-          line-height: 2vw;
-          font-weight: 500;
-          color: #26A5FF;
-        }
-        .client-position {
-          font-size: 1vw;
-          line-height: 1.6vw;
-          color: #0E1529;
-        }
-      }
-      .hover-img {
-        width: 10vw;
-        display: block;
-        margin: 0 auto;
-      }
-      img {
-        width: 2vw;
-      }
-    }
     > div:first-of-type {
       display: inline-flex;
       align-items: center;
       #client-1-info-wrapper {
-        width: 21vw;
+        width: 56vw;
         > a >img {
-          width: 21vw;
+          width: 56vw;
           display: none;
           cursor: pointer;
         }
@@ -577,7 +540,7 @@ main {
     }
     > div:nth-child(2) {
       display: inline-flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       padding: 0 1.1vw;
       > div:first-of-type {
@@ -585,24 +548,21 @@ main {
         align-items: flex-end;
         margin-bottom: 1.1vw;
         #client-2-info-wrapper {
-          height: 22vw;
+          height: 67vw;
           >  a >img:first-of-type {
-            height: 22vw;
+            height: 67vw;
             margin-right: 1.1vw;
             display: none;
             cursor: pointer;
-          }
-          #client-2-info {
-            right: 1vw;
+            margin-top: 1vw;
           }
         }
         #client-4-info-wrapper {
-          height: 20.5vw;
-          width: 18vw;
+          width: 90vw;
           >  a >img:last-of-type {
-            width: 27vw;
-            margin-left: -5vw;
-            margin-top: -2vw;
+            width: 90vw;
+            margin-left: 44vw;
+            margin-bottom: -25vw;      
             display: none;
             cursor: pointer;
           }
@@ -612,21 +572,19 @@ main {
         display: inline-flex;
         #client-3-info-wrapper {
           >  a >img:first-of-type {
-            height: 25vw;
+            height: 67vw;
+            margin-left: -90vw;
             margin-right: 1.1vw;
             display: none;
             cursor: pointer;
           }
-          #client-3-info {
-            right: 1vw;
-          }
         }
         #client-5-info-wrapper {
-          height: 19.7vw;
+          height: 102vw;
           >  a >img:last-of-type {
-            height: 28.7vw;
-            margin-left: -5vw;
-            margin-top: -5vw;
+            height: 102vw;
+            margin-left: 143vw;
+            margin-top: -18vw;
             display: none;
             cursor: pointer;
           }
@@ -635,29 +593,27 @@ main {
     }
     > div:nth-child(3) {
       display: inline-flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       height: 49vh;
       margin-right: 1.1vw;
       #client-6-info-wrapper {
         top: 7vw;
         >  a >img:first-of-type {
-          height: 20vw;
-          margin-left: -5vw;
+          height: 67vw;
+          margin-left: -196vw;
           margin-bottom: 1.1vw;
+          margin-top: -7vw;
           display: none;
           cursor: pointer;
-        }
-        #client-6-info {
-          bottom: 1.1vw;
         }
       }
       #client-7-info-wrapper {
         top: 7vw;
         >  a >img:last-of-type {
-          height: 18.1vw;
-          width: 18.3vw;
-          margin-left: -5vw;
+          width: 67vw;
+          margin-left: -134vw;
+          margin-top: -7vw;
           display: none;
           cursor: pointer;
         }
@@ -669,8 +625,9 @@ main {
       #client-8-info-wrapper {
         top: 1vw;
         >  a >img {
-          width: 29vw;
-          margin-left: -5vw;
+          width: 84vw;
+          margin-top: -1vw;
+          margin-left: -30vw;
           display: none;
           cursor: pointer;
         }
@@ -678,7 +635,7 @@ main {
     }
     > div:nth-child(5) {
       display: inline-flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       padding: 0 1.1vw;
       > div:first-of-type {
@@ -686,25 +643,22 @@ main {
         align-items: flex-end;
         margin-bottom: 1.1vw;
         #client-9-info-wrapper {
-          height: 22vw;
+          height: 67vw;
           >  a >img:first-of-type {
-            height: 22vw;
-            margin-left: -5vw;
+            height: 99vw;
+            margin-left: -30vw;
             margin-right: 1.1vw;
+            margin-top: -7vw;
             display: none;
             cursor: pointer;
           }
-          #client-9-info {
-            right: 1vw;
-          }
         }
         #client-11-info-wrapper {
-          height: 20.5vw;
-          width: 18vw;
+          width: 89vw;
           >  a >img:last-of-type {
-            width: 28vw;
-            margin-left: -5vw;
-            margin-top: -3vw;
+            width: 89vw;
+            margin-left: -16vw;
+            margin-bottom: -24vw;
             display: none;
             cursor: pointer;
           }
@@ -714,20 +668,17 @@ main {
         display: inline-flex;
         #client-10-info-wrapper {
           >  a >img:first-of-type {
-            height: 25vw;
-            margin-left: -5vw;
+            height: 67vw;
+            margin-left: -31vw;
             margin-right: 1.1vw;
             display: none;
             cursor: pointer;
-          }
-          #client-10-info {
-            right: 1vw;
           }
         }
         #client-12-info-wrapper {
           height: 19.7vw;
           >  a >img:last-of-type {
-            height: 24.7vw;
+            height: 67vw;
             display: none;
             cursor: pointer;
           }
@@ -736,29 +687,26 @@ main {
     }
     > div:nth-child(6) {
       display: inline-flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       height: 49vh;
       margin-right: 1.1vw;
       #client-13-info-wrapper {
         top: 7vw;
         >  a >img:first-of-type {
-          height: 28vw;
-          margin-left: -5vw;
+          height: 101vw;
+          margin-left: -16vw;
+          margin-top: -15vw;
           margin-bottom: 1.1vw;
           display: none;
           cursor: pointer;
-        }
-        #client-13-info {
-          bottom: 1.1vw;
         }
       }
       #client-14-info-wrapper {
         top: 7vw;
         >  a >img:last-of-type {
-          height: 17.3vw;
-          width: 17.3vw;
-          margin-left: -1vw;
+          width: 67vw;
+          margin-left: -16vw;
           margin-top: -7vw;
           display: none;
           cursor: pointer;
@@ -807,7 +755,7 @@ main {
   right: 0;
   left: 0;
   padding: 0 11%;
-  background-color: #FE294D;
+  background-color: white;
   height: 100vh;
   z-index: -1;
   .out-of-thought-section-title-box {
@@ -855,7 +803,7 @@ main {
     margin-left: auto;
   }
   &.background-project{
-    background: #242B71;
+    background: #F08064;
     margin-top: 33vw;;
     margin-left: -11vw;
   }
@@ -866,7 +814,7 @@ main {
     height: 216vw;
   }
   &.background-client{
-    background: #03A6B4;
+    background: #535FFF;
     margin-top: 33vw;;
     margin-left: 0vw;
     height: 185vw;

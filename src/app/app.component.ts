@@ -11,7 +11,7 @@ import * as smoothscroll from 'smoothscroll-polyfill';
 export class AppComponent {
   constructor() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      location.href = 'http://m.binary.vision';
+      location.href = 'http://localhost:4200/#/home';
     }
     fontawesome.library.add(faFacebook);
     smoothscroll.polyfill();
