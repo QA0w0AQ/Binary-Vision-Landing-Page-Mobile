@@ -354,7 +354,7 @@ main {
     // padding-left: 10%;
     margin-top: -13%;
     margin-right: -10.5vw;
-    height: 48.1vw;
+    height: 67.1vw;
     overflow: -moz-scrollbars-none;
     &::-webkit-scrollbar {
       display: none;
@@ -526,193 +526,326 @@ main {
     .client-info-wrapper {
       position: relative;
     }
-    > div:first-of-type {
-      display: inline-flex;
-      align-items: center;
-      #client-1-info-wrapper {
-        width: 56vw;
-        > a >img {
+    #client-1-info-wrapper{
+      width: 56vw;
+      & img{
           width: 56vw;
           display: none;
           cursor: pointer;
-        }
       }
     }
-    > div:nth-child(2) {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 1.1vw;
-      > div:first-of-type {
-        display: inline-flex;
-        align-items: flex-end;
-        margin-bottom: 1.1vw;
-        #client-2-info-wrapper {
-          height: 67vw;
-          >  a >img:first-of-type {
-            height: 67vw;
-            margin-right: 1.1vw;
-            display: none;
-            cursor: pointer;
-            margin-top: 1vw;
-          }
-        }
-        #client-4-info-wrapper {
-          width: 90vw;
-          >  a >img:last-of-type {
-            width: 90vw;
-            margin-left: 44vw;
-            margin-bottom: -25vw;      
-            display: none;
-            cursor: pointer;
-          }
-        }
-      }
-      > div:last-of-type {
-        display: inline-flex;
-        #client-3-info-wrapper {
-          >  a >img:first-of-type {
-            height: 67vw;
-            margin-left: -90vw;
-            margin-right: 1.1vw;
-            display: none;
-            cursor: pointer;
-          }
-        }
-        #client-5-info-wrapper {
-          height: 102vw;
-          >  a >img:last-of-type {
-            height: 102vw;
-            margin-left: 143vw;
-            margin-top: -18vw;
-            display: none;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-    > div:nth-child(3) {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 49vh;
-      margin-right: 1.1vw;
-      #client-6-info-wrapper {
-        top: 7vw;
-        >  a >img:first-of-type {
-          height: 67vw;
-          margin-left: -196vw;
-          margin-bottom: 1.1vw;
-          margin-top: -7vw;
+    #client-2-info-wrapper{
+      height: 67vw;
+      & img{
+        margin-left: 1vw;
+        height: 67vw;
           display: none;
           cursor: pointer;
-        }
-      }
-      #client-7-info-wrapper {
-        top: 7vw;
-        >  a >img:last-of-type {
-          width: 67vw;
-          margin-left: -134vw;
-          margin-top: -7vw;
-          display: none;
-          cursor: pointer;
-        }
       }
     }
-    > div:nth-child(4) {
-      display: inline-flex;
-      align-items: center;
-      #client-8-info-wrapper {
-        top: 1vw;
-        >  a >img {
-          width: 84vw;
-          margin-top: -1vw;
-          margin-left: -30vw;
+    #client-3-info-wrapper{
+      height: 67vw;
+      & img{
+        margin-left: 1vw;
+        height: 67vw;
           display: none;
           cursor: pointer;
-        }
       }
     }
-    > div:nth-child(5) {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 1.1vw;
-      > div:first-of-type {
-        display: inline-flex;
-        align-items: flex-end;
-        margin-bottom: 1.1vw;
-        #client-9-info-wrapper {
-          height: 67vw;
-          >  a >img:first-of-type {
-            height: 99vw;
-            margin-left: -30vw;
-            margin-right: 1.1vw;
-            margin-top: -7vw;
-            display: none;
-            cursor: pointer;
-          }
-        }
-        #client-11-info-wrapper {
-          width: 89vw;
-          >  a >img:last-of-type {
-            width: 89vw;
-            margin-left: -16vw;
-            margin-bottom: -24vw;
-            display: none;
-            cursor: pointer;
-          }
-        }
-      }
-      > div:last-of-type {
-        display: inline-flex;
-        #client-10-info-wrapper {
-          >  a >img:first-of-type {
-            height: 67vw;
-            margin-left: -31vw;
-            margin-right: 1.1vw;
-            display: none;
-            cursor: pointer;
-          }
-        }
-        #client-12-info-wrapper {
-          height: 19.7vw;
-          >  a >img:last-of-type {
-            height: 67vw;
-            display: none;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-    > div:nth-child(6) {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 49vh;
-      margin-right: 1.1vw;
-      #client-13-info-wrapper {
-        top: 7vw;
-        >  a >img:first-of-type {
-          height: 101vw;
-          margin-left: -16vw;
-          margin-top: -15vw;
-          margin-bottom: 1.1vw;
+    #client-4-info-wrapper{
+      width: 90vw;
+      & img{
+        margin-top: -8vw;
+        margin-left: -14vw;
+        width: 90vw;
           display: none;
           cursor: pointer;
-        }
-      }
-      #client-14-info-wrapper {
-        top: 7vw;
-        >  a >img:last-of-type {
-          width: 67vw;
-          margin-left: -16vw;
-          margin-top: -7vw;
-          display: none;
-          cursor: pointer;
-        }
       }
     }
+    #client-5-info-wrapper{
+      height: 102vw;
+      & img{
+        height: 67vw;
+        margin-left: -14vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-6-info-wrapper{
+      width: 67vw;
+      & img{
+        margin-left: 1vw;
+        width: 67vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-7-info-wrapper{
+      width: 67vw;
+      & img{
+        width: 81vw;
+        margin-left: -14vw;
+        margin-top: -18vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-8-info-wrapper{
+      width: 84vw;
+      & img{
+        width: 84vw;
+        margin-top: -13vw;
+        margin-left: -28vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-9-info-wrapper{
+      height: 99vw;
+      & img{
+        height: 67vw;
+    margin-left: -14vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-10-info-wrapper{
+      height: 67vw;
+      & img{
+        margin-left: 1vw;
+        height: 67vw;
+        width: 59vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-11-info-wrapper{
+      height: 89vw;
+      & img{
+        height: 67vw;
+        width: 59vw;
+        margin-left: 1vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-12-info-wrapper{
+      height: 67vw;
+      & img{
+        height: 100vw;
+    margin-top: -8vw;
+    margin-left: -15vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-13-info-wrapper{
+      height: 101vw;
+      & img{
+        height: 99vw;
+    margin-left: -31vw;
+    margin-top: -8vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    #client-14-info-wrapper{
+      height: 67vw;
+      & img{
+        margin-left: -15vw;
+        height: 67vw;
+        width: 59vw;
+          display: none;
+          cursor: pointer;
+      }
+    }
+    // > div:first-of-type {
+    //   display: inline-flex;
+    //   align-items: center;
+    //   #client-1-info-wrapper {
+    //     width: 56vw;
+    //     > a >img {
+    //       width: 56vw;
+    //       display: none;
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
+    // > div:nth-child(2) {
+    //   display: inline-flex;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   padding: 0 1.1vw;
+    //   > div:first-of-type {
+    //     display: inline-flex;
+    //     align-items: flex-end;
+    //     margin-bottom: 1.1vw;
+    //     #client-2-info-wrapper {
+    //       height: 67vw;
+    //       >  a >img:first-of-type {
+    //         height: 67vw;
+    //         margin-right: 1.1vw;
+    //         display: none;
+    //         cursor: pointer;
+    //         margin-top: 1vw;
+    //       }
+    //     }
+    //     #client-4-info-wrapper {
+    //       width: 90vw;
+    //       >  a >img:last-of-type {
+    //         width: 90vw;
+    //         margin-left: 44vw;
+    //         margin-bottom: -25vw;      
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //   }
+    //   > div:last-of-type {
+    //     display: inline-flex;
+    //     #client-3-info-wrapper {
+    //       >  a >img:first-of-type {
+    //         height: 67vw;
+    //         margin-left: -90vw;
+    //         margin-right: 1.1vw;
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //     #client-5-info-wrapper {
+    //       height: 102vw;
+    //       >  a >img:last-of-type {
+    //         height: 102vw;
+    //         margin-left: 143vw;
+    //         margin-top: -18vw;
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //   }
+    // }
+    // > div:nth-child(3) {
+    //   display: inline-flex;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   height: 49vh;
+    //   margin-right: 1.1vw;
+    //   #client-6-info-wrapper {
+    //     top: 7vw;
+    //     >  a >img:first-of-type {
+    //       height: 67vw;
+    //       margin-left: -196vw;
+    //       margin-bottom: 1.1vw;
+    //       margin-top: -7vw;
+    //       display: none;
+    //       cursor: pointer;
+    //     }
+    //   }
+    //   #client-7-info-wrapper {
+    //     top: 7vw;
+    //     >  a >img:last-of-type {
+    //       width: 67vw;
+    //       margin-left: -134vw;
+    //       margin-top: -7vw;
+    //       display: none;
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
+    // > div:nth-child(4) {
+    //   display: inline-flex;
+    //   align-items: center;
+    //   #client-8-info-wrapper {
+    //     top: 1vw;
+    //     >  a >img {
+    //       width: 84vw;
+    //       margin-top: -1vw;
+    //       margin-left: -30vw;
+    //       display: none;
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
+    // > div:nth-child(5) {
+    //   display: inline-flex;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   padding: 0 1.1vw;
+    //   > div:first-of-type {
+    //     display: inline-flex;
+    //     align-items: flex-end;
+    //     margin-bottom: 1.1vw;
+    //     #client-9-info-wrapper {
+    //       height: 67vw;
+    //       >  a >img:first-of-type {
+    //         height: 99vw;
+    //         margin-left: -30vw;
+    //         margin-right: 1.1vw;
+    //         margin-top: -7vw;
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //     #client-11-info-wrapper {
+    //       width: 89vw;
+    //       >  a >img:last-of-type {
+    //         width: 89vw;
+    //         margin-left: -16vw;
+    //         margin-bottom: -24vw;
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //   }
+    //   > div:last-of-type {
+    //     display: inline-flex;
+    //     #client-10-info-wrapper {
+    //       >  a >img:first-of-type {
+    //         height: 67vw;
+    //         margin-left: -31vw;
+    //         margin-right: 1.1vw;
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //     #client-12-info-wrapper {
+    //       height: 19.7vw;
+    //       >  a >img:last-of-type {
+    //         height: 67vw;
+    //         display: none;
+    //         cursor: pointer;
+    //       }
+    //     }
+    //   }
+    // }
+    // > div:nth-child(6) {
+    //   display: inline-flex;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   height: 49vh;
+    //   margin-right: 1.1vw;
+    //   #client-13-info-wrapper {
+    //     top: 7vw;
+    //     >  a >img:first-of-type {
+    //       height: 101vw;
+    //       margin-left: -16vw;
+    //       margin-top: -15vw;
+    //       margin-bottom: 1.1vw;
+    //       display: none;
+    //       cursor: pointer;
+    //     }
+    //   }
+    //   #client-14-info-wrapper {
+    //     top: 7vw;
+    //     >  a >img:last-of-type {
+    //       width: 67vw;
+    //       margin-left: -16vw;
+    //       margin-top: -7vw;
+    //       display: none;
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -798,17 +931,17 @@ main {
   z-index: 1;
   // display: none;
   &.background-introduce{
-    background: #FFD93E;
+    background: #FFE600;
     margin-top: -34vw;
     margin-left: auto;
   }
   &.background-project{
-    background: #F08064;
+    background: #FF8B46;
     margin-top: 33vw;;
     margin-left: -11vw;
   }
   &.background-capabilities{
-    background: #FE294D;
+    background: #FF4C64;
     margin-top: 0;
     margin-left: auto;
     height: 216vw;
@@ -835,7 +968,6 @@ main {
   &.binaryvision-project{
     padding-left: 15vw;
     padding-top: 21vw;
-    color: white;
   }
   &.binaryvision-capabilities{
     padding-top: 20vw;
@@ -930,7 +1062,6 @@ main {
     margin-left: 12vw;
     padding-top: 1vw;
     margin-right: 7vw;
-    color: white;
     &.learnMore{
       cursor: pointer;
       float: right;
@@ -1150,7 +1281,7 @@ main {
   right: 0;
   left: 0;
   padding: 0 8%;
-  background-color: #F08064;
+  background-color: #0E1529;
   z-index: -1;
   .footer-content {
     display: flex;
@@ -1160,7 +1291,7 @@ main {
     .footer-title-box {
       h1 {
         display: block;
-        color: #0E1529;
+        color: #fff;
       }
       span {
         display: block;
@@ -1168,7 +1299,7 @@ main {
       }
       h2 {
         display: block;
-        color: #0E1529;
+        color: #fff;
         margin-top: 0;
       }
     }
@@ -1205,7 +1336,7 @@ main {
           font-size: 4.5vw;
           font-weight: 300;
           letter-spacing: 0.05vw;
-          color: #0E1529;
+          color: #fff;
         }
         textarea,
         input {

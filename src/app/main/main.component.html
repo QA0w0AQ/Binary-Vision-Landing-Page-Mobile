@@ -12,7 +12,7 @@
       </div>
       <div class="contact-us-wrapper">
         <div *ngIf="!isMessageWritten">
-          <span [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : null">First of all, how can we help?</span>
+          <span [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : null">First of all, what do you need?</span>
           <textarea type="text" placeholder="Describe your project briefly"
                     [ngStyle]="isMessageWritten ? {'opacity': '0.4'} : {'opacity': '0.9'}" [(ngModel)]="message"
                     [disabled]="isMessageWritten" (keyup)="replaceSpaces('message')"></textarea>
@@ -463,7 +463,7 @@
         </div>
     </section>
 
-    <div style="height: 311vw;  background-color: #F7F6F3;">
+    <div style="height: 290vw;  background-color: #F7F6F3;">
             <div style="height: 1vw;  background-color: #F7F6F3;"></div>
             <div id="client-page" class="client-page">
                     <div class="background background-client" id="background-client">
@@ -488,7 +488,7 @@
             
             <!-- clients-section -->
             <div class="clients-section" *ngIf="true">
-                <div id="clients-list" class="clients-list">
+                <!-- <div id="clients-list" class="clients-list">
                     <div>
                         <div id="client-1-info-wrapper" class="client-info-wrapper">
                             <a href="tbd" target="_blank">
@@ -581,6 +581,80 @@
                             </a>
                         </div>
                     </div>
+                </div> -->
+                <div id="clients-list" class="clients-list">
+                            <div id="client-1-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                    <img id="client-1" src="assets/images/Client List Slider/Group@2x.png" alt="" >
+                                </a> 
+                            </div>
+                            <div id="client-2-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-2" src="assets/images/Client List Slider/Group.svg" alt="">
+                                </a>
+                            </div>
+                            <div id="client-3-info-wrapper" class="client-info-wrapper">
+                                    <a href="http://rentyourride.ca" target="_blank">
+                                        <img id="client-3" src="assets/images/Client List Slider/Group.png" alt="">
+                                    </a>
+                            </div>
+                            <div id="client-4-info-wrapper" class="client-info-wrapper">
+                                <a href="http://quantumdance.ca/" target="_blank">
+                                    <img id="client-4" src="assets/images/Client List Slider/Quantum@2x.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-5-info-wrapper" class="client-info-wrapper">
+                                <a href="http://arvin.ai" target="_blank">
+                                    <img id="client-6" src="assets/images/Client List Slider/Group@3x.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-6-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-7" src="assets/images/Client List Slider/Group@1.5x.png" alt="">
+                                    </a>
+                            </div>
+                            <div id="client-7-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-5" src="assets/images/Client List Slider/AllSay.svg" alt="">
+                                </a>
+                            </div>
+                            <div id="client-8-info-wrapper" class="client-info-wrapper">
+                                <a href="http://gigglapp.com" target="_blank">
+                                    <img id="client-8" src="assets/images/Client List Slider/Giggl@2x.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-9-info-wrapper" class="client-info-wrapper">
+                                    <a href="tbd" target="_blank">
+                                            <img id="client-12" src="assets/images/Client List Slider/Group 4@2x.png" alt="">
+                                    </a>
+
+                            </div>
+                            <div id="client-10-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                        <img id="client-9" src="assets/images/Client List Slider/Looper@2x.png" alt="">
+                                </a>
+                            </div>
+                            <div id="client-11-info-wrapper" class="client-info-wrapper">
+                                    <a href="http://rentyourride.ca" target="_blank">
+                                        <img id="client-10" src="assets/images/Client List Slider/Group 5@2x.png" alt="">
+                                    </a>  
+                            </div>
+                            <div id="client-12-info-wrapper" class="client-info-wrapper">
+                                    <a href="http://arvin.ai" target="_blank">
+                                        <img id="client-13" src="assets/images/Client List Slider/Kenergy Labs@2x.png" alt="">
+                                    </a>
+                            </div>   
+                            <div id="client-13-info-wrapper" class="client-info-wrapper">
+                                    <a href="http://quantumdance.ca/" target="_blank">
+                                        <img id="client-11" src="assets/images/Client List Slider/AC@2x.png" alt="">
+                                    </a>
+                            </div>
+                            <div id="client-14-info-wrapper" class="client-info-wrapper">
+                                <a href="tbd" target="_blank">
+                                    <img id="client-14" src="assets/images/Client List Slider/berry_s_white@2x.png" alt="">
+                                </a>
+                            </div>
+                        
                 </div>
         </div>
     </div>
