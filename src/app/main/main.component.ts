@@ -116,9 +116,9 @@ export class MainComponent implements OnInit {
         }
     }
 
-    // routeTo(page) {
-    //     location.href = location.href.split('/')[0] + '/#/' + page;
-    // }
+    routeTo(page) {
+        location.href = location.href.split('/')[0] + '/#/' + page;
+    }
 
     scrollTo(type) {
         window.scrollBy({
