@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="492px" height="522px" viewBox="0 0 492 522" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>E0379C96-E75C-4839-B61D-80470CC090FA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-78.6%" y="-71.9%" width="257.2%" height="243.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="44" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="43.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="New-Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-List-Slider" transform="translate(-2629.000000, -325.000000)">
+            <g id="Kenergy-Labs" transform="translate(2715.000000, 367.000000)">
+                <g id="Group-2" fill="#F0FD30" fill-rule="nonzero">
+                    <g id="Group" filter="url(#filter-1)">
+                        <rect id="Rectangle" x="0" y="0" width="320" height="350"></rect>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(37.000000, 51.000000)" fill="#000000" fill-rule="nonzero">
+                    <path d="M117.379009,7.10542736e-15 L215.314869,7.10542736e-15 L215.314869,4.32727273 C204.273081,5.28888889 195.87172,8.17373737 190.110787,12.9818182 C184.349854,17.789899 170.187561,34.8585859 147.623907,64.1878788 C147.623907,40.6282828 146.183673,25.4828283 143.303207,18.7515152 C142.976709,17.988527 140.84107,13.6163217 136.822157,10.0969697 C134.701719,8.24010685 132.501458,7.21212121 128.900875,5.76969697 C126.500486,4.80808081 122.659864,4.32727273 117.379009,4.32727273 L117.379009,7.10542736e-15 Z" id="Path"></path>
+                    <path d="M98.6559767,127.654545 L141.862974,72.1212121 C185.069971,153.377778 209.793975,200.49697 216.034985,213.478788 C222.275996,226.460606 232.597668,232.951515 247,232.951515 L247,236.557576 C204.753158,238.480808 178.108844,237.759596 167.067055,234.393939 C158.750529,231.858972 150.316067,223.755197 148.344023,219.969697 C142.58309,208.911111 126.020408,178.139394 98.6559767,127.654545 Z" id="Path-2"></path>
+                    <path d="M87.8542274,140.636364 L27.3644315,216.363636 C20.6433431,216.363636 17.04276,216.363636 16.5626822,216.363636 C16.1332453,216.363636 4.32069971,216.363636 4.32069971,216.363636 C4.32069971,216.363636 4.32069971,213.478788 4.32069971,213.478788 C11.473172,211.807339 23.0437318,212.757576 28.8046647,187.515152 C32.3694351,171.895555 29.5247813,77.5323875 29.5247813,72.1212121 C29.5247813,63.8468639 31.3544804,34.2344873 25.9241983,19.4727273 C22.563654,10.3373737 13.9222546,5.04848485 4.97379915e-14,3.60606061 L4.97379915e-14,-2.27373675e-13 C35.5257532,-2.27373675e-13 55.6890185,0.480808081 60.4897959,1.44242424 C78.374459,5.02479839 84.8872648,23.5401169 85.6938776,25.9636364 C87.1341108,30.2909091 87.8542274,68.5151515 87.8542274,140.636364 Z" id="Path-3"></path>
+                </g>
+                <text id="labs" font-family="SofiaPro-Bold, Sofia Pro" font-size="30" font-weight="bold" letter-spacing="-1.2" fill="#141414">
+                    <tspan x="230" y="312">labs</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

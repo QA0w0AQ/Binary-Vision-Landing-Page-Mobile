@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="492px" height="522px" viewBox="0 0 492 522" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>A5395AD9-E5A3-4C91-9A27-80342036797C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-78.6%" y="-71.9%" width="257.2%" height="243.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="44" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="43.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="New-Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-List-Slider" transform="translate(-2629.000000, -325.000000)" fill="#F0FD30" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(2715.000000, 367.000000)">
+                <g id="Group-2">
+                    <g id="Group" filter="url(#filter-1)">
+                        <rect id="Rectangle" x="0" y="0" width="320" height="350"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
