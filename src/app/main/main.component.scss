@@ -352,9 +352,9 @@ main {
     overflow-x: scroll;
     overflow-y: auto;
     // padding-left: 10%;
-    margin-top: -13%;
+    margin-top: -112%;
     margin-right: -10.5vw;
-    height: 67.1vw;
+    height: 106.1vw;
     overflow: -moz-scrollbars-none;
     &::-webkit-scrollbar {
       display: none;
@@ -364,7 +364,7 @@ main {
     }
     .member-info {
       display: none;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       background-color: #F7F6F3;
       padding: 1.6vw;
@@ -377,7 +377,7 @@ main {
       animation-duration: 0.4s;
       > div {
         display: inline-flex;
-        flex-direction: column;
+        flex-direction: row;
         .member-name {
           font-size: 1.4vw;
           line-height: 2vw;
@@ -403,9 +403,11 @@ main {
       display: inline-flex;
       align-items: center;
       #member-1-info-wrapper {
-        width: 63vw;
+        width: 69vw;
         > img {
-          width: 63vw;
+          width: 69vw;
+          margin-top: 12vw;
+          margin-left: 6vw;
           display: none;
           cursor: pointer;
         }
@@ -413,7 +415,7 @@ main {
     }
     > div:nth-child(2) {
       display: inline-flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       padding: 0 1.1vw;
       > div:first-of-type {
@@ -421,10 +423,11 @@ main {
         align-items: flex-end;
         margin-bottom: 1.1vw;
         #member-2-info-wrapper {
-          height: 22vw;
+          height: 83vw;
           > img:first-of-type {
-            height: 22vw;
-            margin-right: 1.1vw;
+            height: 83vw;
+            margin-left: 6vw;
+            margin-top: -4.6vw;
             display: none;
             cursor: pointer;
           }
@@ -433,11 +436,11 @@ main {
           }
         }
         #member-4-info-wrapper {
-          height: 20.5vw;
-          width: 18vw;
+          height: 82vw;
           > img:last-of-type {
-            height: 20.5vw;
-            width: 18vw;
+            height: 82vw;
+            margin-left: 1vw;
+            margin-top: -5vw;
             display: none;
             cursor: pointer;
           }
@@ -447,7 +450,9 @@ main {
         display: inline-flex;
         #member-3-info-wrapper {
           > img:first-of-type {
-            height: 25vw;
+            height: 82vw;
+            margin-top: 18vw;
+            margin-left: 1vw;
             margin-right: 1.1vw;
             display: none;
             cursor: pointer;
@@ -457,9 +462,10 @@ main {
           }
         }
         #member-5-info-wrapper {
-          height: 19.7vw;
+          height: 81.7vw;
           > img:last-of-type {
-            height: 19.7vw;
+            height: 81.7vw;
+            margin-top: 18vw;
             display: none;
             cursor: pointer;
           }
@@ -468,15 +474,15 @@ main {
     }
     > div:nth-child(3) {
       display: inline-flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       height: 49vh;
       margin-right: 1.1vw;
       #member-6-info-wrapper {
         top: 7vw;
         > img:first-of-type {
-          height: 20vw;
-          margin-bottom: 1.1vw;
+          height: 82vw;
+          margin-top: 11vw;
           display: none;
           cursor: pointer;
         }
@@ -487,7 +493,9 @@ main {
       #member-7-info-wrapper {
         top: 7vw;
         > img:last-of-type {
-          height: 18.1vw;
+          height: 82.1vw;
+          margin-top: 11vw;
+          margin-left: 1vw;
           display: none;
           cursor: pointer;
         }
@@ -499,7 +507,8 @@ main {
       #member-8-info-wrapper {
         top: 1vw;
         > img {
-          width: 20vw;
+          width: 68vw;
+          margin-top: 10vw;
           display: none;
           cursor: pointer;
         }
@@ -927,7 +936,7 @@ main {
 .background {
   opacity: 0;
   height: 230vw;
-  width: 89.5vw;
+  width: 91vw;
   z-index: 1;
   // display: none;
   &.background-introduce{
